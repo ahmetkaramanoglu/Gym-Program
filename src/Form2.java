@@ -40,7 +40,12 @@ public class Form2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton2.setText("Müşteriler");
+        jButton2.setText("Add Member");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Eğitmenler");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +137,12 @@ public class Form2 extends javax.swing.JFrame {
         ekipman.setVisible(true);
         this.hide();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            Uyeler member=new Uyeler();
+            member.setVisible(true);
+            this.hide();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
