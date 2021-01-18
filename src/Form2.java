@@ -12,7 +12,7 @@
  * @author ahmet
  */
 public class Form2 extends javax.swing.JFrame {
-    Person p=new Person();
+    
     /**
      * Creates new form Form2
      */
@@ -47,23 +47,28 @@ public class Form2 extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Eğitmenler");
+        jButton3.setText("Trainers");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Egzersiz Planı");
+        jButton4.setText("\tWorkout Plan");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("Ekipman");
+        jButton5.setText("Equipment");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Vücut Kitle İndeksi");
+        jButton6.setText("Body Mass Index");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -121,8 +126,8 @@ public class Form2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Egitmen egitmen=new Egitmen();
-        egitmen.setVisible(true);
+        Trainer trainer=new Trainer();
+        trainer.setVisible(true);
         this.hide();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -133,16 +138,22 @@ public class Form2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        Ekipman ekipman=new Ekipman();
-        ekipman.setVisible(true);
+        Equipment equipment=new Equipment();
+        equipment.setVisible(true);
         this.hide();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-            Uyeler member=new Uyeler();
+            Members member=new Members();
             member.setVisible(true);
             this.hide();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Exercise exercise=new Exercise();
+        exercise.setVisible(true);
+        this.hide();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

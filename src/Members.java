@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
  *
  * @author ahmet
  */
-public class Uyeler extends javax.swing.JFrame {
+public class Members extends javax.swing.JFrame {
 
     /**
      * Creates new form Uyeler
      */
-    public Uyeler() {
+    public Members() {
         initComponents();
         Connect();
     }
@@ -34,9 +34,9 @@ public class Uyeler extends javax.swing.JFrame {
             Class.forName("com.mysql.jdbc.Driver");
             con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost/gymmanagement", "root", "");
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Uyeler.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Members.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Uyeler.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Members.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -109,7 +109,11 @@ public class Uyeler extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtmSex))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(txtmSex)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addComponent(jLabel4)
@@ -124,11 +128,8 @@ public class Uyeler extends javax.swing.JFrame {
                                     .addComponent(jLabel2)))
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(141, 141, 141)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 54, Short.MAX_VALUE)))
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 150, Short.MAX_VALUE)))
                 .addGap(109, 109, 109))
         );
         layout.setVerticalGroup(
@@ -154,12 +155,11 @@ public class Uyeler extends javax.swing.JFrame {
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(20, 20, 20)
-                        .addComponent(jButton2))
+                    .addComponent(jLabel5)
                     .addComponent(txtmSex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
@@ -197,7 +197,7 @@ public class Uyeler extends javax.swing.JFrame {
             txtmName.requestFocus();
             
         } catch (SQLException ex) {
-            Logger.getLogger(Uyeler.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Members.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -218,20 +218,21 @@ public class Uyeler extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Uyeler.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Members.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Uyeler.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Members.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Uyeler.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Members.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Uyeler.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Members.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Uyeler().setVisible(true);
+                new Members().setVisible(true);
             }
         });
     }
