@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -153,13 +156,13 @@ public class BKI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1KeyReleased
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            Form2 f2=new Form2();
-            f2.setVisible(true);
+            MemberInterface memberInterface=new MemberInterface();
+            memberInterface.setVisible(true);
             this.hide();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
-       
+            
     }//GEN-LAST:event_jTextField2KeyReleased
 
         
@@ -167,12 +170,21 @@ public class BKI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
- 
-              customer.setWeight(Float.parseFloat(jTextField1.getText()));
-              customer.setHeight(Float.parseFloat(jTextField2.getText()));
-         
-         String bodyMassIndex=Float.toString(customer.bodyMassIndex(customer));
-         jTextField3.setText(bodyMassIndex);
+             String weight=jTextField1.getText();
+             String height=jTextField2.getText();
+             if(weight.isEmpty()|| height.isEmpty()){
+                  JOptionPane.showMessageDialog(this,"Weight or Height don't blank.");
+                  jTextField1.setText("");
+                  jTextField2.setText("");
+                  
+              }
+              else{
+                  customer.setWeight(Float.parseFloat(weight));
+                  customer.setHeight(Float.parseFloat(height));
+                   String bodyMassIndex=Float.toString(customer.bodyMassIndex(customer));
+                   jTextField3.setText(bodyMassIndex);
+                }
+              
          
     }//GEN-LAST:event_jButton3ActionPerformed
 
