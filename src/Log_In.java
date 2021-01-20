@@ -4,15 +4,10 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Log_In extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Log_In
-     */
+ 
     public Log_In() {
         initComponents();
     }

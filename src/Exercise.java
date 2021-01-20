@@ -4,15 +4,10 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Exercise extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Egzersiz
-     */
+    
     public Exercise() {
         initComponents();
     }

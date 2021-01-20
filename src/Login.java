@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Login {
     private String username;
     private String password;

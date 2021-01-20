@@ -4,15 +4,10 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class MemberInterface extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MemberInterface
-     */
+   
     public MemberInterface() {
         initComponents();
     }

@@ -23,14 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="76" max="-2" attributes="0"/>
-              <EmptySpace pref="318" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton1" min="-2" pref="76" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="312" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -71,10 +75,20 @@
                   <Data value="Bench Press"/>
                   <Data value="Incline Press"/>
                   <Data value="Dumbell Press"/>
-                  <Data value="null"/>
+                  <Data value="Decline Press"/>
                 </Column>
-                <Column editable="true" title="Arms" type="java.lang.Object"/>
-                <Column editable="true" title="Legs" type="java.lang.Object"/>
+                <Column editable="true" title="Arms" type="java.lang.Object">
+                  <Data value="Shoulder Press"/>
+                  <Data value="Dumbell Shoulder Press"/>
+                  <Data value="Cable"/>
+                  <Data value="Bent-Over"/>
+                </Column>
+                <Column editable="true" title="Legs" type="java.lang.Object">
+                  <Data value="Leg Press"/>
+                  <Data value="Hack Squat"/>
+                  <Data value="Leg Curl"/>
+                  <Data value="Leg Extension"/>
+                </Column>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

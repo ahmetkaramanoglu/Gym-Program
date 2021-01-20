@@ -7,15 +7,10 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Form2 extends javax.swing.JFrame {
     
-    /**
-     * Creates new form Form2
-     */
+    
     
     public Form2() {
         initComponents();

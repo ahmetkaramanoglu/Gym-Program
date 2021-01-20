@@ -4,14 +4,13 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Customer extends Person{
-     private String startDate;
+    private String startDate;
     private String finishDate;
-    private String memberType;
+    private String subScription;
+    private String amount;
+    
     
     
     public float bodyMassIndex(Person p){
@@ -51,14 +50,33 @@ public class Customer extends Person{
     /**
      * @return the seatType
      */
-    public String getMemberType() {
-        return memberType;
+    
+
+    /**
+     * @return the subScription
+     */
+    public String getSubScription() {
+        return subScription;
     }
 
     /**
-     * @param seatType the seatType to set
+     * @param subScription the subScription to set
      */
-    public void setMemberType(String memberType) {
-        this.memberType = memberType;
+    public void setSubScription(String subScription) {
+        this.subScription = subScription;
+    }
+
+    /**
+     * @return the amount
+     */
+    public String getAmount() {
+        return amount;
+    }
+
+    /**
+     * @param amount the amount to set
+     */
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 }

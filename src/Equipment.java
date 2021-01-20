@@ -4,15 +4,10 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Equipment extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Ekipman
-     */
+   
     public Equipment() {
         initComponents();
     }
@@ -41,10 +36,10 @@ public class Equipment extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Bench Press", null, null},
-                {"Incline Press", null, null},
-                {"Dumbell Press", null, null},
-                {null, null, null}
+                {"Bench Press", "Shoulder Press", "Leg Press"},
+                {"Incline Press", "Dumbell Shoulder Press", "Hack Squat"},
+                {"Dumbell Press", "Cable", "Leg Curl"},
+                {"Decline Press", "Bent-Over", "Leg Extension"}
             },
             new String [] {
                 "Chest", "Arms", "Legs"
@@ -58,11 +53,13 @@ public class Equipment extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(318, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 312, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

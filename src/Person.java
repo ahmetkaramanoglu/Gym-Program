@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class Person {
     private String name;
     private String surname;
-    private int Age;
-    private String Sex;
+    private String Age;
+    private String Gender;
     private String phoneNumber;
     private String adress;
     private float height;
@@ -39,23 +36,23 @@ public class Person {
     }
 
    
-    public int getAge() {
+    public String getAge() {
         return Age;
     }
 
    
-    public void setAge(int Age) {
+    public void setAge(String Age) {
         this.Age = Age;
     }
 
    
     public String getSex() {
-        return Sex;
+        return Gender;
     }
 
     
     public void setSex(String Sex) {
-        this.Sex = Sex;
+        this.Gender = Sex;
     }
 
     public String getPhoneNumber() {

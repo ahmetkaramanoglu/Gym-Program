@@ -7,16 +7,11 @@ import javax.swing.JOptionPane;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ahmet
- */
+
 public class BKI extends javax.swing.JFrame {
     Customer customer=new Customer();
-    Person p=new Person();
-    /**
-     * Creates new form BKI
-     */
+    
+    
     public BKI() {
         initComponents();
     }
@@ -170,6 +165,7 @@ public class BKI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
              String weight=jTextField1.getText();
              String height=jTextField2.getText();
              if(weight.isEmpty()|| height.isEmpty()){
@@ -178,6 +174,11 @@ public class BKI extends javax.swing.JFrame {
                   jTextField2.setText("");
                   
               }
+             else if(weight.equals("0") || height.equals("0")){
+                 JOptionPane.showMessageDialog(this,"Weight or Height don't zero.");
+                  jTextField1.setText("");
+                  jTextField2.setText("");
+             }
               else{
                   customer.setWeight(Float.parseFloat(weight));
                   customer.setHeight(Float.parseFloat(height));
